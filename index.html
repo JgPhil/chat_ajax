@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="app.css">
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<h1>Chat avec Ajax</h1>
+		</header>
+		<section class="chat">
+			<div class="messages_block">
+				<div class="one_message">
+					<span class="date">20:30</span>
+					<span class="author">Phil</span>
+					:
+					<span class="content">Un message très intéressant</span>
+				</div>
+			</div>
+			<div class="user_input">
+				<form action="handler.php?action=write" method="post">
+					<input type="text" name="author" id="author">
+					<textarea id="content" name="content"></textarea>
+					<button type="submit">Envoyer</button>
+				</form>
+			</div>
+		</section>
+		<script src="app.js"></script>
+	</body>
+</html>
